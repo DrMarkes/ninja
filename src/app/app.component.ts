@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Ninja';
+  title = 'App works! woop...woop...';
+
+  ninja = {
+    name: 'Ryu',
+    belt: 'Red'
+  }
+
+  yell($event: Event) {
+    alert('I am yelling');
+    console.log($event);
+  }
 }

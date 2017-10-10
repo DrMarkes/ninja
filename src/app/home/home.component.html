@@ -2,13 +2,6 @@
   {{ homeTitle }}
 </p>
 
-<ng-content></ng-content>
-<p></p>
-<label>Name: </label>
-<input [(ngModel)]="ninja.name" />
-<p></p>
-<label>Belt: </label>
-<input [(ngModel)]="ninja.belt" />
-
 <p>{{ ninja.name }}</p>
 <p>{{ ninja.belt }}</p>
+<button (click)="fireYellEvent($event)">Hit Me</button>
