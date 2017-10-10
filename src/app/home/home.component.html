@@ -3,8 +3,12 @@
 </p>
 
 <ng-content></ng-content>
+<p></p>
+<label>Name: </label>
+<input [(ngModel)]="ninja.name" />
+<p></p>
+<label>Belt: </label>
+<input [(ngModel)]="ninja.belt" />
 
-<input [value]="myString" />
-<input [required]="myBoolean" />
-
-<button (click)="alertMe('I like beef!')">Click me!</button>
+<p>{{ ninja.name }}</p>
+<p>{{ ninja.belt }}</p>
