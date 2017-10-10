@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directory.component.css']
 })
 export class DirectoryComponent implements OnInit {
+  ninjas = [
+    { name: 'Ryu', belt: 'Black' },
+    { name: 'Spider', belt: 'Red' },
+    { name: 'Hitman', belt: 'Purple' }
+  ];
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  remove($event) {}
 }
