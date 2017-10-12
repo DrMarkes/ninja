@@ -12,6 +12,8 @@ export class DirectoryComponent implements OnInit {
     { name: 'Hitman', belt: 'Purple' }
   ];
 
+  term: string;
+
   constructor() { }
 
   ngOnInit() {
