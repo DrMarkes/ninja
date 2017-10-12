@@ -10,5 +10,19 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBXhS2Q4N1EadIWvRE6KHsgZP7n-yy8jkE",
+      authDomain: "ninjas-angular.firebaseapp.com",
+      databaseURL: "https://ninjas-angular.firebaseio.com",
+      projectId: "ninjas-angular",
+      storageBucket: "ninjas-angular.appspot.com",
+      messagingSenderId: "375015305013"
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
