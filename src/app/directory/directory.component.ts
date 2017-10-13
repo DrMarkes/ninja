@@ -14,6 +14,8 @@ export class DirectoryComponent implements OnInit {
   ninjas = [];
 
   term: string;
+  name: string;
+  belt: string;
 
   constructor(private logger: LoggingService,
               private dataService: DataService) { }
@@ -27,10 +29,6 @@ export class DirectoryComponent implements OnInit {
     this.fbGetData();
   }
 
-  logIt() {
-    this.logger.log();
-  }
-
   fbGetData() {
     firebase.database().ref('/').on("child_added",
       snapshot => {
@@ -39,4 +37,8 @@ export class DirectoryComponent implements OnInit {
   }
 
   remove($event) {}
+
+  fbPostData(name: string, belt: string) {
+    firebase.database().ref('/').push({name: name, belt: belt});
+  }
 }

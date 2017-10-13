@@ -2,7 +2,7 @@
 
 <form id="filter">
   <label>Filter ninjas by name:</label>
-  <input [(ngModel)]="term" name="term">
+  <input [(ngModel)]="term" name="term" />
 </form>
 
 <ul id="ninja-listing">
@@ -15,4 +15,8 @@
   </li>
 </ul>
 
-<button (click)="logIt()">Log me</button>
+<form id="add-ninja">
+  <input [(ngModel)]="name" name="name" />
+  <input [(ngModel)]="belt" name="belt" />
+  <button (click)="fbPostData(name, belt)">Add ninja</button>
+</form>
